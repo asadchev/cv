@@ -1,0 +1,214 @@
+%\documentclass[overlap,line]{cv}
+\documentclass[overlap,line]{cv}
+\newsectionwidth{0.2in}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.1in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+\setlength{\parskip}{0.05in}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\name{Andrey Asadchev \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+(515) 337-5362 \\
+asadchev@gmail.com
+
+\section{\sc Summary}
+\vspace{.05in}
+Computational scientist passionate about C++, high-performance computing, and low-level code optimization.
+Interests include C++ template expressions and meta-programming, parallel linear algebra,
+computational chemistry, and machine learning. \\
+Fluent in English, native Russian speaker.
+
+
+\section{\sc Education}
+\vspace{.05in}
+{\bf PhD, Physical Chemistry}, Dec 2012 \\
+Iowa State University, Ames, IA
+\vspace*{.02in}
+\begin{list2}
+%% \item Advisor:  Mark S. Gordon
+\item Emphasis on computational quantum chemistry.
+\item Dissertation: {\it Modernizing the core quantum chemistry algorithms}, \\
+ {http://lib.dr.iastate.edu/etd/12915/}
+\end{list2}
+
+{\bf BSc, Computer Science},  May, 2005\\
+Valdosta State University, Valdosta, GA
+\vspace*{.02in}
+\begin{list2}
+\item Magna Cum Laude
+\end{list2}
+
+
+\section{\sc Technical Skills}
+\vspace{.05in}
+\begin{tabular}{ l @{\hskip 1em} l }
+Programming Languages: & C++/C++11, Python, C, FORTRAN 77/90 \\
+C++ Concepts: & Object oriented design, metaprogramming, expression templates \\
+C++ Libraries: & Standard Template Library (STL), Boost (including MPL and Fusion)\\
+Scientific Computing: & BLAS, LAPACK, Eigen, Trillions, Mathematica, Matlab/Octave \\
+Parallel Programming: & MPI, CUDA, TBB, OpenMP, ARMCI \\
+Parallel I/O: & HDF5, NetCDF, Lustre, PVFS \\
+Code optimization: & SSE and AVX vectorization with intrinsics/assembly \\
+Performance analysis: & Linux perf, Intel VTune/Parallel Studio, PAPI \\
+Debugging: & gdb, Valgrind, DDT, TotalView \\
+Build tools: & CMake, autotools \\
+Collaboration: & git, Atlassian stack (JIRA, Stash), Agile \\
+HPC Environments: & IBM BlueGene, Cray XT, OpenMPI, MPICH, PBS/Torque \\
+UNIX/Linux: & POSIX API programming, bash shell scripting, Linux administration \\
+\end{tabular}
+
+
+\section{\sc Work and Research Experience}
+\vspace{.05in}
+{\bf Skytree, Inc.}, San Jose, CA \\
+{\it HPC C++ Developer} \hfill {\bf 2013 - Present}
+
+Participated in the development of the Skytree C++ Machine Learning (ML) product.
+\vspace{.05in}
+\begin{list2}
+\item Refactored the C++ codebase according to modern C++ patterns; \\
+  reduced the number of lines of code, improved maintainability and compilation speed.
+\item Identified and resolved key computational and memory bottlenecks; \\
+  significantly improved overall execution time and reduced memory footprint.
+\item Implemented core dense and sparse linear algebra objects and kernels.
+\item Designed and implemented several distributed ML algorithms using OpenMP and MPI.
+\item Worked with data scientists to address feature requests and resolve bugs.
+\end{list2}
+
+\newpage
+
+{\bf Virginia Tech}, Blacksburg, VA \\
+{\it PostDoctoral Researcher} \hfill {\bf 2012 - 2013}
+
+Participated in the development of Massively Parallel Quantum Chemistry (MPQC) package.
+\vspace{.05in}
+\begin{list2}
+\item Modernized the MPQC C++ code base by using Boost and Eigen linear algebra library.
+\item Ported MPQC to CMake; simplified build and deployment across various HPC platforms.
+\item Developed fully distributed OpenMP/MPI sparse Davidson eigensolver
+  with out-of-core capabilities, scalable to 1000s of cores.
+\item Conducted pilot research to optimize key computational kernels on SSE/AVX processors.
+\end{list2}
+
+
+{\bf Iowa State University}, Ames, IA \\
+{\it Research Assistant} \hfill {\bf 2008 - 2012}
+
+Developed computational chemistry C++ library (libcchem) with GPU capabilities
+and FORTRAN bindings.
+\vspace{.05in}
+\begin{list2}
+\item Implemented automatically generated vectorized C++ Rys Quadrature algorithm; \\
+  30-40\% faster than the original FORTRAN code.
+\item Implemented scalable multi-threaded Hartree-Fock algorithm with constant memory overhead.
+\item Implemented Rys Quadrature and Hartree-Fock algorithms on GPU using CUDA C++; \\
+  showed speedups on the order of 10-17 times.\\
+  In the process resolved several issues in Boost C++ libraries due to CUDA compiler.
+\item Designed and implemented distributed in-core and out-of-core
+  data storage suitable for matrix and tensor computations with C++
+  object oriented interface and integration with BLAS.
+\item Implemented scalable distributed perturbation theory and Coupled Cluster
+  algorithms with low memory footprint and ability to utilize GPU devices via CuBLAS. \\
+  The implementation showed orders of magnitude reduction in memory use, as
+  well as improvement in speed and overall scalability (1000s of cores),
+  over the original FORTRAN code.
+\end{list2}
+
+
+{\bf Ames Laboratory}, Ames, IA \\
+{\it Research Assistant} \hfill {\bf 2006 - 2008}
+
+Participated in the development of The General Atomic and Molecular Electronic Structure System
+(GAMESS).
+\vspace{.05in}
+\begin{list2}
+\item Added ARMCI remote memory implementation to GAMESS.
+\item Implemented execution script to run GAMESS in various MPI (OpenMPI, MPICH, IMPI)
+  and batch system environments (LSF, PBS, Torque, LoadLeveler).
+\item Ported GAMESS to Blue Gene and Cray XT.
+\item Replaced FORTRAN code with BLAS/LAPACK calls, parallelized linear algebra routines; \\
+  improved overall program performance, allowed GAMESS to scale to 1000s of cores.
+\end{list2}
+
+
+\section{\sc Teaching Experience}
+\vspace{.05in}
+{\bf Virginia Tech}, Blacksburg, VA \\
+{\em (SICM)2 Summer School} \hfill {\bf 2013}
+
+\begin{list2}
+\item Taught GPU/CUDA programming workshop to computational sciences graduate students.
+\end{list2}
+
+{\bf Iowa State University}, Ames, IA \\
+{\em Chemistry Instructor}  \hfill {\bf 2005 - 2006}
+
+\begin{list2}
+\item Taught general chemistry lab and recitation sections. 
+\end{list2}
+
+\newpage
+
+\section{\sc Publications and Presentations}
+\vspace{.05in}
+
+{\it A Fast and Flexible Coupled Cluster Approach} \\
+A. Asadchev, M. S. Gordon \\
+Journal of Chemical Theory and Computation 2013 9(8)
+
+{\it New Multithreaded Hybrid CPU/GPU Approach to Hartree–Fock} \\
+A. Asadchev, M. S. Gordon \\
+Journal of Chemical Theory and Computation 2012 8 (11)
+
+{\it Uncontracted Rys Quadrature Implementation of up to G Functions on graphical processing units (GPUs)} \\
+A. Asadchev, V. Allada, J. Felder, B. M. Bode, M. S. Gordon, T. L. Windus \\
+Journal of Chemical Theory and Computation 2010 6(3)
+
+{\it Accelerating Quantum Chemistry Research using GPUs} \\
+A. Asadchev, J. Felder \\
+GPU Technology Conference, NVIDIA, San Jose, 2009
+
+%% {\it Performance of Electronic Structure Calculations on BG/L and XT4 Computers} \\
+%% A. Asadchev, B. M. Bode, M. S. Gordon \\
+%% Journal of Computational and Theoretical Nanoscience, 2009 6(6)
+
+{\it Uncontracted Rys Quadrature on GPU} \\
+A. Asadchev \\
+Path to Petascale, NCSA, 2009
+
+{\it Performance of Electronic Structure Calculations on Blue Gene/L and Cray XT4} \\
+A. Asadchev \\
+IEEE/ACM Supercomputing 2008 Poster
+
+\end{resume}
+\end{document}
+
+
+
+

@@ -1,0 +1,133 @@
+Andrey Asadchev
+
+Contact Information
+  (515) 337-5362
+  asadchev@gmail.com
+
+
+Summary
+
+  Computational scientist passionate about C++, high-performance computing, and low-level code
+  optimization. Interests include C++ template expressions and meta-programming, parallel linear
+  algebra, computational chemistry, and machine learning.
+  Fluent in English, native Russian speaker.
+
+
+Education
+
+  PhD, Physical Chemistry, Dec 2012
+  Iowa State University, Ames, IA
+   * Emphasis on computational quantum chemistry.
+   * Dissertation: Modernizing the core quantum chemistry algorithms,
+     http://lib.dr.iastate.edu/etd/12915/
+
+  BSc, Computer Science, May, 2005
+  Valdosta State University, Valdosta, GA
+   * Magna Cum Laude
+
+
+Technical Skills
+
+   Programming Languages: C++/C++11, Python, C, FORTRAN 77/90
+   C++ Concepts:          Object oriented design, metaprogramming, expression templates
+   C++ Libraries:         Standard Template Library (STL), Boost (including MPL and Fusion)
+   Scientiﬁc Computing:   BLAS, LAPACK, Eigen, Trillions, Mathematica, Matlab/Octave
+   Parallel Programming:  MPI, CUDA, TBB, OpenMP, ARMCI
+   Parallel I/O:          HDF5, NetCDF, Lustre, PVFS
+   Code optimization:     SSE and AVX vectorization with intrinsics/assembly
+   Performance analysis:  Linux perf, Intel VTune/Parallel Studio, PAPI
+   Debugging:             gdb, Valgrind, DDT, TotalView
+   Build tools:           CMake, autotools
+   Collaboration:         git, Atlassian stack (JIRA, Stash), Agile
+   HPC Environments:      IBM BlueGene, Cray XT, OpenMPI, MPICH, PBS/Torque
+   UNIX/Linux:            POSIX API programming, bash shell scripting, Linux administration
+
+
+Work and Research Experience
+
+  Skytree, Inc., San Jose, CA
+  HPC C++ Developer                                                                2013 - Present
+  Participated in the development of the Skytree C++ Machine Learning (ML) product.
+   * Refactored the C++ codebase according to modern C++ patterns;
+     reduced the number of lines of code, improved maintainability and compilation speed.
+   * Identiﬁed and resolved key computational and memory bottlenecks;
+     signiﬁcantly improved overall execution time and reduced memory footprint.
+   * Implemented core dense and sparse linear algebra objects and kernels.
+   * Designed and implemented several distributed ML algorithms using OpenMP and MPI.
+   * Worked with data scientists to address feature requests and resolve bugs.
+
+  Virginia Tech, Blacksburg, VA
+  PostDoctoral Researcher                                                             2012 - 2013
+  Participated in the development of Massively Parallel Quantum Chemistry (MPQC) package.
+   * Modernized the MPQC C++ code base by using Boost and Eigen linear algebra library.
+   * Ported MPQC to CMake; simpliﬁed build and deployment across various HPC platforms.
+   * Developed fully distributed OpenMP/MPI sparse Davidson eigensolver with out-of-core
+     capabilities, scalable to 1000s of cores.
+   * Conducted pilot research to optimize key computational kernels on SSE/AVX processors.
+
+  Iowa State University, Ames, IA
+  Research Assistant                                                                  2008 - 2012
+  Developed computational chemistry C++ library (libcchem) with GPU capabilities and FORTRAN
+  bindings.
+   * Implemented automatically generated vectorized C++ Rys Quadrature algorithm;
+     30-40% faster than the original FORTRAN code.
+   * Implemented scalable multi-threaded Hartree-Fock algorithm with constant memory overhead.
+   * Implemented Rys Quadrature and Hartree-Fock algorithms on GPU using CUDA C++;
+     showed speedups on the order of 10-17 times.
+     In the process resolved several issues in Boost C++ libraries due to CUDA compiler.
+   * Designed and implemented distributed in-core and out-of-core data storage suitable for
+     matrix and tensor computations with C++ object oriented interface and integration with BLAS.
+   * Implemented scalable distributed perturbation theory and Coupled Cluster algorithms with low
+     memory footprint and ability to utilize GPU devices via CuBLAS.
+     The implementation showed orders of magnitude reduction in memory use, as well as improvement
+     in speed and overall scalability (1000s of cores), over the original FORTRAN code.
+
+  Ames Laboratory, Ames, IA
+  Research Assistant                                                                  2006 - 2008
+  Participated in the development of The General Atomic and Molecular Electronic Structure System
+  (GAMESS).
+   * Added ARMCI remote memory implementation to GAMESS.
+   * Implemented execution script to run GAMESS in various MPI (OpenMPI, MPICH, IMPI) and
+     batch system environments (LSF, PBS, Torque, LoadLeveler).
+   * Ported GAMESS to Blue Gene and Cray XT.
+   * Replaced FORTRAN code with BLAS/LAPACK calls, parallelized linear algebra routines;
+     improved overall program performance, allowed GAMESS to scale to 1000s of cores.
+
+
+Teaching Experience
+
+  Virginia Tech, Blacksburg, VA
+  (SICM)2 Summer School                                                                      2013
+   * Taught GPU/CUDA programming workshop to computational sciences graduate students.
+
+  Iowa State University, Ames, IA
+  Chemistry Instructor                                                                2005 - 2006
+   * Taught general chemistry lab and recitation sections.
+
+
+Publications and Presentations
+
+  A Fast and Flexible Coupled Cluster Approach
+  A. Asadchev, M. S. Gordon
+  Journal of Chemical Theory and Computation 2013 9(8)
+
+  New Multithreaded Hybrid CPU/GPU Approach to HartreeFock
+  A. Asadchev, M. S. Gordon
+  Journal of Chemical Theory and Computation 2012 8 (11)
+
+  Uncontracted Rys Quadrature Implementation of up to G Functions on graphical processing units
+  (GPUs)
+  A. Asadchev, V. Allada, J. Felder, B. M. Bode, M. S. Gordon, T. L. Windus
+  Journal of Chemical Theory and Computation 2010 6(3)
+
+  Accelerating Quantum Chemistry Research using GPUs
+  A. Asadchev, J. Felder
+
+  GPU Technology Conference, NVIDIA, San Jose, 2009
+  Uncontracted Rys Quadrature on GPU
+  A. Asadchev
+
+  Path to Petascale, NCSA, 2009
+  Performance of Electronic Structure Calculations on Blue Gene/L and Cray XT4
+  A. Asadchev
+  IEEE/ACM Supercomputing 2008 Poster
